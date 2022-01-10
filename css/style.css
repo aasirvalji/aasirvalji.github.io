@@ -1,0 +1,291 @@
+/* Start global styling */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+
+@font-face {
+  font-family: SF;
+  src: url(./SF-UI-Display-Regular.otf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "SF", "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+/* End global styling */
+
+/* Start page 1 display */
+#page-1 {
+  background: url(../images/mon.jpeg);
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.loginContainer h3 {
+  font-weight: normal;
+  padding-bottom: 15px;
+  margin: 10px;
+}
+
+.cancel a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.loginContainer .pic {
+  height: 100px;
+  width: 100px;
+  background: url(../images/penguin.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 150%;
+}
+
+.input input {
+  font-size: 14px;
+  line-height: 200px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff69;
+  height: 30px;
+  width: 160px;
+  padding: 6px;
+  box-sizing: border-box;
+  background-color: rgba(127, 116, 101, 0.76);
+  backdrop-filter: blur(0.5rem);
+  color: #ffffff69;
+  font-weight: 900;
+}
+
+.input input::placeholder {
+  color: #ffffff69;
+  font-weight: 500;
+}
+/* top bar navigation style */
+#page-1 nav {
+  position: absolute;
+  top: 1.2px;
+  right: 0;
+  width: 230px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 1px;
+  font-size: 12px;
+}
+#page-1 nav .wifi {
+  transform: translateY(-2px);
+  width: 18px;
+}
+
+.batteryContainer img {
+  height: auto;
+  width: 20px;
+  margin-left: 5px;
+}
+
+.cancel {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cancel .button {
+  width: 40px;
+  height: 40px;
+  background: rgb(82, 82, 82);
+  border-radius: 150%;
+}
+
+.cancel img {
+  transform: scale(0.8);
+}
+
+.cancel span {
+  font-size: 14px;
+  padding: 4px;
+}
+/* End page 1 display */
+
+/* Start page 2 display */
+.logo {
+  box-sizing: border-box;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo i {
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.logo .line1 {
+  width: 20rem;
+  height: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.386);
+}
+
+.logo .line2 {
+  width: 0;
+  height: 0.3rem;
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 320px) {
+  .logo i {
+    font-size: 5rem;
+  }
+  .logo .line1 {
+    width: 10rem;
+    height: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo i {
+    font-size: 5rem;
+  }
+  .logo .line1 {
+    width: 12rem;
+    height: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo i {
+    font-size: 6rem;
+  }
+  .logo .line1 {
+    width: 13rem;
+    height: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .logo i {
+    font-size: 6.2rem;
+  }
+  .logo .line1 {
+    width: 20rem;
+    height: 0.3rem;
+    border-radius: 200px;
+  }
+}
+/* End page 2 display */
+
+/* Start page 3 display */
+#container > * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", sans-serif;
+  color: rgb(0, 240, 0);
+}
+
+#container input {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 0.8rem;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+#current-cli {
+  display: flex;
+  width: 100vw;
+}
+
+#current-cli p {
+  word-wrap: break-word;
+}
+
+#current-cli > input,
+#prev-cli-text {
+  flex: 1;
+  margin-left: 10px;
+  caret-color: rgb(0, 240, 0);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(0, 240, 0);
+}
+
+.command-result {
+  display: flex;
+  word-wrap: break-word;
+  margin: -0.8px 0px -0.5px 0px;
+}
+
+.ls-grid,
+.tab-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.ls-item-0,
+.tab-item-0 {
+  /*align-self:start;*/
+  grid-column: 1/2;
+}
+
+.ls-item-1,
+.tab-item-1 {
+  /*align-self:end;*/
+  grid-column: 2/3;
+}
+
+.ls-item-2,
+.tab-item-2 {
+  /*justify-self:end;*/
+  grid-column: 3/4;
+}
+
+.ls-item-3,
+.tab-item-3 {
+  grid-column: 4/5;
+}
+
+.help-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* End page 3 display */

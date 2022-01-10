@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aasir's Webbook</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preload" as="image" href="./images/mon.jpeg" />
+    <link
+      rel="shortcut icon"
+      href="./images/apple-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main id="page-1">
+      <nav>
+        <div class="batteryContainer">
+          <span id="battery-level">89</span>%
+          <img src="./images/battery-icon.svg" alt="Battery icon" />
+        </div>
+        <img class="wifi" src="./images/wifi-icon.svg" alt="wifi icon" />
+
+        <div id="date">Thu 9 Apr 10:30 PM</div>
+      </nav>
+      <div class="loginContainer">
+        <div class="pic"></div>
+        <h3>Aasir Valji</h3>
+        <div class="input">
+          <span></span>
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Enter Password"
+          />
+        </div>
+      </div>
+      <div class="cancel">
+        <div class="button">
+          <a href="javascript:window.open('','_self').close();">
+            <img src="./images/delete-button.svg" alt="delete button" />
+          </a>
+        </div>
+        <a href="javascript:window.open('','_self').close();">
+          <span>Cancel</span>
+        </a>
+      </div>
+    </main>
+
+    <div class="hidden" id="page-2">
+      <div class="logo">
+        <i class="fa fa-apple"></i>
+        <div class="line1">
+          <div id="myBar" class="line2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-3" class="hidden">
+      <div id="container">
+        <p id="ttys"></p>
+        <div id="current-cli">
+          <p id="webbook-label">aasirvalji@Aasirs-WebBook-Pro&nbsp;<p id='webbook-path'>~</p>&nbsp;%</p>
+          <input id="cli-input" autofocus autocomplete="off" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/winbox.bundle.js" type="module"></script>
+    <script src="./js/cli.js" type="module"></script>
+  </body>
+</html>
